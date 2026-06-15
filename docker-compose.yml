@@ -6,9 +6,9 @@ services:
     container_name: postgres_db
     restart: always
     environment:
-      postgres_user: usuario
-      postgres_password: senha123
-      postgres_db: meubanco
+      POSTGRES_USER: usuario
+      POSTGRES_PASSWORD: senha123
+      POSTGRES_DB: meubanco
     ports:
       - "5432:5432"
     volumes:
